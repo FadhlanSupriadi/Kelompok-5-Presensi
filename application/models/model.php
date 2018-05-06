@@ -1,5 +1,4 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-date_default_timezone_set('Asia/Jakarta');
 
 class Model extends CI_Model {
 
@@ -23,7 +22,7 @@ class Model extends CI_Model {
 		$data = $this->db->query('select * from tb_divisi '.$where);
 		return $data;
 	}
-
+	//ambil data tabel produk
 	public function GetPegawai($where= "")
 	{
 		$data = $this->db->query('select * from tb_pegawai '.$where);
@@ -82,10 +81,4 @@ class Model extends CI_Model {
         $this->db->update('tb_pegawai',$data);
     }
 	//batas crud data
-
-
-
-	function TotalDiv(){
-		return $this->db->query("select count(*) as totaldivisi from tb_divisi group by id_div; ");
-	}
 }
