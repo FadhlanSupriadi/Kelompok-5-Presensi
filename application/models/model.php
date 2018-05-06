@@ -83,7 +83,7 @@ class Model extends CI_Model {
     }
 	//batas crud data
 
-    
+
 
 	function TotalDiv(){
 		return $this->db->query("select count(*) as totaldivisi from tb_divisi group by id_div; ");

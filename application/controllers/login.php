@@ -37,11 +37,13 @@ class Login extends CI_Controller {
 				// $sess_data['logged_in'] = 'Sudah Loggin';
 				$sess_data['id_user'] = $sess->id_user;
 				$sess_data['nama_user'] = $sess->nama_user;
+                $sess_data['pass_user'] = $sess->pass_user;
 				$sess_data['nama'] = $sess->nama;
-				$sess_data['pass_user'] = $sess->pass_user;
+                $sess_data['nip'] = $sess->nip;
 				$this->session->set_userdata($sess_data);
 				$this->session->set_userdata('useradmin', $sess_data);
 				redirect(base_url()."dashboard");
+
 			}		
 		}
 		else {
