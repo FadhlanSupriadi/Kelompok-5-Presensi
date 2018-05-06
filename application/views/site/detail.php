@@ -7,17 +7,7 @@
 <body>
 	<?php $this->load->view('incsite/head2'); ?>
 	
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3">
-					<?php $this->load->view('incsite/sidebar'); ?>
-				</div>
-				
-				<?php $this->load->view('incsite/detail_produk'); ?>
-			</div>
-		</div>
-	</section>
+
 	
 	<footer id="footer"><!--Footer-->		
 		<div class="footer-bottom">

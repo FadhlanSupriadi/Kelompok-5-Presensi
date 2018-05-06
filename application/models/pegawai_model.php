@@ -1,4 +1,6 @@
 <?php
+date_default_timezone_set('Asia/Jakarta');
+
 class Pegawai_model extends CI_Model{ 
 
 	function pegawai_model()

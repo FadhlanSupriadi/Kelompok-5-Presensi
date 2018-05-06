@@ -35,7 +35,7 @@
           <!-- Small boxes (Stat box) -->
           <div class="row">
             <div class="col-md-12">
-            <a style="margin-bottom:3px" href="<?php echo base_url(); ?>pegawai/addpegawai" class="btn btn-primary no-radius dropdown-toggle"><i class="fa fa-plus"></i> TAMBAH pegawai </a>
+            <a style="margin-bottom:3px" href="<?php echo base_url(); ?>pegawai/addpegawai" class="btn btn-primary no-radius dropdown-toggle"><i class="fa fa-plus"></i> TAMBAH PEGAWAI </a>
               <div class="box">
                 <span id="pesan-flash"><?php echo $this->session->flashdata('sukses'); ?></span>
                 <span id="pesan-error-flash"><?php echo $this->session->flashdata('alert'); ?></span>

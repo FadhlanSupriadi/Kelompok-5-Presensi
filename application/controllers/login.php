@@ -1,4 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+date_default_timezone_set('Asia/Jakarta');
 
 class Login extends CI_Controller {
 
@@ -37,16 +38,9 @@ class Login extends CI_Controller {
 				$sess_data['id_user'] = $sess->id_user;
 				$sess_data['nama_user'] = $sess->nama_user;
 				$sess_data['nama'] = $sess->nama;
-				$sess_data['level'] = $sess->level;
 				$sess_data['pass_user'] = $sess->pass_user;
 				$this->session->set_userdata($sess_data);
-			}
-			if ($this->session->userdata('level')=='1') {
 				$this->session->set_userdata('useradmin', $sess_data);
-				redirect(base_url()."dashboard");
-			}
-			else{
-				$this->session->set_userdata('pasartungging', $sess_data);
 				redirect(base_url()."dashboard");
 			}		
 		}

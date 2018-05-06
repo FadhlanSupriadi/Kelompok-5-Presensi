@@ -1,4 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+date_default_timezone_set('Asia/Jakarta');
 
 class Model extends CI_Model {
 
@@ -22,7 +23,7 @@ class Model extends CI_Model {
 		$data = $this->db->query('select * from tb_divisi '.$where);
 		return $data;
 	}
-	//ambil data tabel produk
+
 	public function GetPegawai($where= "")
 	{
 		$data = $this->db->query('select * from tb_pegawai '.$where);
@@ -82,23 +83,9 @@ class Model extends CI_Model {
     }
 	//batas crud data
 
- //    //model untuk visitor/pengunjung
- //    function GetVisitor($where = ""){
-	// 	return $this->db->query("select * from tb_visitor $where");		
-	// }
+    
 
-	function GetProductView(){
-		return $this->db->query("select sum(counter) as totalview from tb_pegawai where status = 'publish'");
-	}
-	//batas query pengunjung
-
-	public function GetJabe($where= "")
-	{
-		$data = $this->db->query('select count(*) as totaldivisi from tb_divisi '.$where);
-		return $data;
-	}
-
-	function TotalKat(){
-		return $this->db->query("select count(*) as totaldivisi from tb_pegawai group by id_div; ");
+	function TotalDiv(){
+		return $this->db->query("select count(*) as totaldivisi from tb_divisi group by id_div; ");
 	}
 }

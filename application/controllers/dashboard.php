@@ -1,4 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+date_default_timezone_set('Asia/Jakarta');
 
 class Dashboard extends CI_Controller {
 
@@ -17,11 +18,9 @@ class Dashboard extends CI_Controller {
 	public function index()
 	{
 		$data = array(
-			// 'total_product' => $this->model->GetProduk()->num_rows(),
-			// 'product_view' => $this->model->GetProductView()->result_array(),
-			'nama' => $this->session->userdata('nama'),	
+			'nama' => $this->session->userdata('nama'),
 		);
-		
+
 		$this->load->view('dashboard', $data);
 	}
 }

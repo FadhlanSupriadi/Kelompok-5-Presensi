@@ -1,4 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+date_default_timezone_set('Asia/Jakarta');
 
 class Divisi extends CI_Controller {
 
@@ -41,6 +42,18 @@ class Divisi extends CI_Controller {
 		$this->load->view('divisi/data_divisi', $data);
 	}
 
+    function hapusdiv($kode = 1){
+
+        $result = $this->model->Hapus('tb_divisi', array('id_div' => $kode));
+        if($result == 1){
+            $this->session->set_flashdata("sukses", "<div class='alert alert-success'><strong>Hapus data BERHASIL dilakukan</strong></div>");
+            header('location:'.base_url().'divisi');
+        }else{
+            $this->session->set_flashdata("alert", "<div class='alert alert-danger'><strong>Hapus data GAGAL di lakukan</strong></div>");
+            header('location:'.base_url().'divisi');
+        }
+    }
+
 	function savedata(){
 		if($_POST){
 			$status = $_POST['status'];
@@ -76,18 +89,6 @@ class Divisi extends CI_Controller {
 			}
 		}else{
 			echo('handak baapa nyawa tong!!!');
-		}
-	}
-
-	function hapuskat($kode = 1){
-		
-		$result = $this->model->Hapus('tb_divisi', array('id_div' => $kode));
-		if($result == 1){
-			$this->session->set_flashdata("sukses", "<div class='alert alert-success'><strong>Hapus data BERHASIL dilakukan</strong></div>");
-			header('location:'.base_url().'divisi');
-		}else{
-			$this->session->set_flashdata("alert", "<div class='alert alert-danger'><strong>Hapus data GAGAL di lakukan</strong></div>");
-			header('location:'.base_url().'divisi');
 		}
 	}
 }

@@ -91,7 +91,7 @@
                   </div><!-- /.item -->
                 <div class="form-group">
                   <button type="submit" class="btn btn-primary btn-block btn-flat">Simpan</button>
-                  <a href="<?php echo base_url(); ?>produk" class="btn btn-warning btn-block btn-flat">Kembali</a>
+                  <a href="<?php echo base_url(); ?>pegawai" class="btn btn-warning btn-block btn-flat">Kembali</a>
                 </div><!-- /.col -->
                </form>
                
