@@ -4,25 +4,25 @@
 <script>
 
 $( document ).ready(function() {
- $("#nik").keyup(function(event){
+ $("#nip").keyup(function(event){
     	if(event.keyCode == 13){
         	 cekMasuk();
     	}
 	});
 });
 function cekMasuk(){
-			var nik=$("#nik").val();
+			var nip=$("#nip").val();
 		$.ajax({
 			url:'<?php echo base_url(); ?>home/cekPulang/',		 
 			type:'POST',
-			data:"nik="+nik,
+			data:"nip="+nip,
 			success:function(data){ 
 			  	if(data==''){
-					 $( "#infodlg" ).html('Nik Tidak tersedia Harap Periksa Kembali ...');
+					 $( "#infodlg" ).html('Nip Tidak tersedia Harap Periksa Kembali ...');
 					 $( "#infodlg" ).dialog({ title:"Info...", draggable: false});					 
 				} else {
 				   $("#notification").html(data);
-				   $("#nik").val("");
+				   $("#nip").val("");
 				}
 			 }
 		});		
@@ -58,7 +58,7 @@ return i;
 	<tr>
     	<td></td>
         <td></td>
-        <td><input type="text"  name="nik" id="nik" style="height:50px;width:400px;font-size:30px" placeholder="NIK KARYAWAN"></td>
+        <td><input type="text"  name="nip" id="nip" style="height:50px;width:400px;font-size:30px" placeholder="NIP PEGAWAI"></td>
     </tr>
 </table>
 <div id="notification">

@@ -12,7 +12,7 @@ class Model extends CI_Model {
 
 	//ambil data user
 	function GetUser($data) {
-        $query = $this->db->get_where('tb_login', $data);
+        $query = $this->db->get_where('tb_user', $data);
         return $query;
     }
 
@@ -23,41 +23,41 @@ class Model extends CI_Model {
 		return $data;
 	}
 	//ambil data tabel produk
-	public function GetKaryawan($where= "")
+	public function GetPegawai($where= "")
 	{
-		$data = $this->db->query('select * from tb_karyawan '.$where);
+		$data = $this->db->query('select * from tb_pegawai '.$where);
 		return $data;
 	}
 
-	public function GetTotKaryawan()
+	public function GetTotPegawai()
 	{
-		$data = $this->db->query('select * from tb_karyawan group by id_div ');
+		$data = $this->db->query('select * from tb_pegawai group by id_div ');
 		return $data;
 	}
 
 	public function GetDetPresensi($where = ""){
-		return $this->db->query("select tb_presensi.*, tb_karyawan.*, tb_divisi.* from tb_karyawan inner join tb_presensi on tb_presensi.nik=tb_karyawan.nik $where;");
+		return $this->db->query("select tb_presensi.*, tb_pegawai.*, tb_divisi.* from tb_pegawai inner join tb_presensi on tb_presensi.nip=tb_pegawai.nip $where;");
 	}
 
 	public function count_all() {
-		return $this->db->count_all('tb_karyawan');
+		return $this->db->count_all('tb_pegawai');
 	}
 
 	//ambil data dari 3 tabel
-	public function GetKaryawanDivAbs($where= "") {
+	public function GetPegawaiDivAbs($where= "") {
     $data = $this->db->query('SELECT p.*, q.divisi, r.*
-                                FROM tb_karyawan p
+                                FROM tb_pegawai p
                                 INNER JOIN tb_presensi r
-                                ON(p.nik = r.nik)
+                                ON(p.nip = r.nip)
                                 INNER JOIN tb_divisi q
                                 ON(p.id_div = q.id_div)'.$where);
     return $data;
     }
 
 	//ambil data dari 2 tabel
-	public function GetKaryawanDiv($where= "") {
+	public function GetPegawaiDiv($where= "") {
     $data = $this->db->query('SELECT p.*, q.divisi
-                                FROM tb_karyawan p
+                                FROM tb_pegawai p
                                 LEFT JOIN tb_divisi q
                                 ON(p.id_div = q.id_div)'.$where);
     return $data;
@@ -76,9 +76,9 @@ class Model extends CI_Model {
 		return $this->db->delete($table,$where);
 	}
 
-	function UpdateKaryawan($data){
-        $this->db->where('id_kar',$data['id_kar']);
-        $this->db->update('tb_karyawan',$data);
+	function UpdatePegawai($data){
+        $this->db->where('nip',$data['nip']);
+        $this->db->update('tb_pegawai',$data);
     }
 	//batas crud data
 
@@ -88,7 +88,7 @@ class Model extends CI_Model {
 	// }
 
 	function GetProductView(){
-		return $this->db->query("select sum(counter) as totalview from tb_karyawan where status = 'publish'");
+		return $this->db->query("select sum(counter) as totalview from tb_pegawai where status = 'publish'");
 	}
 	//batas query pengunjung
 
@@ -99,6 +99,6 @@ class Model extends CI_Model {
 	}
 
 	function TotalKat(){
-		return $this->db->query("select count(*) as totaldivisi from tb_karyawan group by id_div; ");
+		return $this->db->query("select count(*) as totaldivisi from tb_pegawai group by id_div; ");
 	}
 }

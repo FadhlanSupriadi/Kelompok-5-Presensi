@@ -22,7 +22,7 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          <b>DATA KARYAWAN</b>
+          <b>DATA PEGAWAI</b>
         </h1>
           <!-- <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -35,7 +35,7 @@
           <!-- Small boxes (Stat box) -->
           <div class="row">
             <div class="col-md-12">
-            <a style="margin-bottom:3px" href="<?php echo base_url(); ?>karyawan/addkaryawan" class="btn btn-primary no-radius dropdown-toggle"><i class="fa fa-plus"></i> TAMBAH KARYAWAN </a>
+            <a style="margin-bottom:3px" href="<?php echo base_url(); ?>pegawai/addpegawai" class="btn btn-primary no-radius dropdown-toggle"><i class="fa fa-plus"></i> TAMBAH pegawai </a>
               <div class="box">
                 <span id="pesan-flash"><?php echo $this->session->flashdata('sukses'); ?></span>
                 <span id="pesan-error-flash"><?php echo $this->session->flashdata('alert'); ?></span>
@@ -47,7 +47,7 @@
                   <thead>
                     <tr>
                       <th>NO</th>
-                      <th>NIK</th>
+                      <th>NIP</th>
                       <th>NAMA</th>
                       <th>DIVISI</th>
                       <th>PEKERJAAN</th>
@@ -59,22 +59,22 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <?php $no=0; foreach($data_karyawan as $row) { $no++ ?>
+                    <?php $no=0; foreach($data_pegawai as $row) { $no++ ?>
                     <tr>
                       <td><?php echo $no; ?></td>
-                      <td><?php echo $row['nik']; ?></td>
-                      <td><?php echo $row['nama_kar']; ?></td>
+                      <td><?php echo $row['nip']; ?></td>
+                      <td><?php echo $row['nama_pg']; ?></td>
                       <td><?php echo $row['divisi']; ?></td>
                       <td><?php echo $row['pekerjaan']; ?></td>
                       <td><?php echo $row['nohp']; ?></td>
-                      <td><?php echo $row['tgl_input_kar']; ?></td>
+                      <td><?php echo $row['tgl_input_pg']; ?></td>
                       <td>
                       <img style="width:80px;height:80px" src="<?php echo base_url(); ?>assets/upload/<?php echo $row['foto']; ?>" class="img-circl" alt="User Image" />
                       </td>
                     
                       <td>
-                      <a class="btn btn-warning btn-sm" href="<?php echo base_url(); ?>karyawan/editkaryawan/<?php echo $row['id_kar']; ?>"><i class="fa fa-pencil"></i></a>
-                      <a onclick="return confirm('Hapus data??');" class="btn btn-danger btn-sm" href="<?php echo base_url(); ?>karyawan/hapuskar/<?php echo $row['id_kar']; ?>"><i class="fa fa-trash"></i></a>
+                      <a class="btn btn-warning btn-sm" href="<?php echo base_url(); ?>pegawai/editpegawai/<?php echo $row['nip']; ?>"><i class="fa fa-pencil"></i></a>
+                      <a onclick="return confirm('Hapus data??');" class="btn btn-danger btn-sm" href="<?php echo base_url(); ?>pegawai/hapuspg/<?php echo $row['nip']; ?>"><i class="fa fa-trash"></i></a>
                       </td>
                     </tr>
                     <?php } ?>

@@ -29,7 +29,7 @@
  * This class is based on two scripts:
  *
  * Marcus Campbell's PHP implementation (GNU license)
- * http://www.tecknik.net/sha-1/
+ * http://www.tecknip.net/sha-1/
  *
  * ...which is based on Paul Johnston's JavaScript version
  * (BSD license). http://pajhome.org.uk/

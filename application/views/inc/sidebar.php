@@ -24,8 +24,8 @@
               </a>
             </li>
             <li>
-              <a href="<?php echo base_url(); ?>karyawan">
-                <i class="fa fa-photo"></i> <span>Karyawan</span> <small class="label pull-right bg-green"></small>
+              <a href="<?php echo base_url(); ?>pegawai">
+                <i class="fa fa-photo"></i> <span>Pegawai</span> <small class="label pull-right bg-green"></small>
               </a>
             </li>
             <li>

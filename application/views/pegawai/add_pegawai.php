@@ -22,7 +22,7 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          <b>TAMBAH DATA KARYAWAN</b>
+          <b>TAMBAH DATA PEGAWAI</b>
         </h1>
           <!-- <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -40,21 +40,21 @@
             <div class="box">
               <div class="box-header">
                 <i class="fa fa-plus"></i>
-                <h3 class="box-title">FORM TAMBAH KARYAWAN</h3>
+                <h3 class="box-title">FORM TAMBAH PEGAWAI</h3>
               </div>
               <div class="box-body chat" id="chat-box">
                 <!-- chat item -->
                 <div class="item">
-                  <form role="form" action="<?php echo base_url(); ?>karyawan/savedata" method="POST" enctype="multipart/form-data">
+                  <form role="form" action="<?php echo base_url(); ?>pegawai/savedata" method="POST" enctype="multipart/form-data">
                   <div class="col-lg-6">
                     <div class="form-group">
-                      <label for="">NIK</label>
-                        <input type="text" class="form-control" value="" id="" name="nik" placeholder="" required>
+                      <label for="">NIP</label>
+                        <input type="text" class="form-control" value="" id="" name="nip" placeholder="" required>
                     </div>
 
                     <div class="form-group">
                       <label for="">Nama</label>
-                        <input type="text" class="form-control" value="" id="" name="nama_kar" placeholder="" required>                        
+                        <input type="text" class="form-control" value="" id="" name="nama_pg" placeholder="" required>
                     </div>
                     <div class="form-group">
                       <label for="">NO HP</label>
@@ -86,7 +86,7 @@
                 </div><!-- /.item -->
                 <div class="form-group">
                   <button type="submit" class="btn btn-primary btn-block btn-flat">Simpan</button>
-                  <a href="<?php echo base_url(); ?>karyawan" class="btn btn-warning btn-block btn-flat">Kembali</a>
+                  <a href="<?php echo base_url(); ?>pegawai" class="btn btn-warning btn-block btn-flat">Kembali</a>
                 </div><!-- /.col -->
                </form>
               </div><!-- /.chat -->

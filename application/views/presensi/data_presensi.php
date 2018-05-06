@@ -22,7 +22,7 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          <b>DATA KARYAWAN</b>
+          <b>DATA PEGAWAI</b>
           <select class="form-control" style="width:300px">
           	<option>--Pilih Bulan--</option>
           	<option>Januari</option>
@@ -63,7 +63,7 @@
           <!-- Small boxes (Stat box) -->
           <div class="row">
             <div class="col-md-12">
-            <!-- <a style="margin-bottom:3px" href="<?php echo base_url(); ?>karyawan/addkaryawan" class="btn btn-primary no-radius dropdown-toggle"><i class="fa fa-plus"></i> TAMBAH KARYAWAN </a> -->
+            <!-- <a style="margin-bottom:3px" href="<?php echo base_url(); ?>pegawai/addpegawai" class="btn btn-primary no-radius dropdown-toggle"><i class="fa fa-plus"></i> TAMBAH pegawai </a> -->
               <div class="box">
                 <!-- <span id="pesan-flash"><?php echo $this->session->flashdata('sukses'); ?></span>
                 <span id="pesan-error-flash"><?php echo $this->session->flashdata('alert'); ?></span> -->
@@ -74,8 +74,8 @@
                  <table id="example1" class="table table-bordered table-striped">
                   <thead>
                     <tr>
-                      <th>UID</th>
-                      <th>NIK</th>
+                      <th>ID PRESENSI</th>
+                      <th>NIP</th>
                       <th>NAMA</th>
                       <th>DIVISI</th>
                       <th>TANGGAL</th>
@@ -87,11 +87,11 @@
                     <?php $no=0; foreach($data_presensi as $row) { $no++ ?>
                     <tr>
                       <td><?php echo $no; ?></td>
-                      <td><?php echo $row['nik']; ?></td>
-                      <td><?php echo $row['nama_kar']; ?></td>
+                      <td><?php echo $row['nip']; ?></td>
+                      <td><?php echo $row['nama_pg']; ?></td>
                       <td><?php echo $row['divisi']; ?></td>
                       <td><?php echo $row['tanggal']; ?></td>
-                      <td><?php echo $row['jammasuk']; ?></td>
+                      <td><?php echo $row['jampresensi']; ?></td>
                       <td><?php if ($row['kodepresensi'] == 1) { ?>
 						<h4><span class="label label-success">Masuk</span></h4>
                       <?php } else { ?>

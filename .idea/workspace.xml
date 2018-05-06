@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea91261a-5880-463e-90cd-7c1d9675f562" name="Default" comment="" />
+    <list default="true" id="ea91261a-5880-463e-90cd-7c1d9675f562" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/application/controllers/karyawan.php" afterPath="$PROJECT_DIR$/application/controllers/pegawai.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/karyawan/add_karyawan.php" afterPath="$PROJECT_DIR$/application/views/pegawai/add_pegawai.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/karyawan/data_karyawan.php" afterPath="$PROJECT_DIR$/application/views/pegawai/data_pegawai.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/karyawan/edit_karyawan.php" afterPath="$PROJECT_DIR$/application/views/pegawai/edit_pegawai.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/login.php" afterPath="$PROJECT_DIR$/application/controllers/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/presensi.php" afterPath="$PROJECT_DIR$/application/controllers/presensi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/m_login.php" afterPath="$PROJECT_DIR$/application/models/m_login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/model.php" afterPath="$PROJECT_DIR$/application/models/model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/pegawai_model.php" afterPath="$PROJECT_DIR$/application/models/pegawai_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/inc/sidebar.php" afterPath="$PROJECT_DIR$/application/views/inc/sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/masuk.php" afterPath="$PROJECT_DIR$/application/views/masuk.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/presensi/data_presensi.php" afterPath="$PROJECT_DIR$/application/views/presensi/data_presensi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/pulang.php" afterPath="$PROJECT_DIR$/application/views/pulang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/libraries/Sha1.php" afterPath="$PROJECT_DIR$/system/libraries/Sha1.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,19 +26,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Input.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/system/core/Input.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="365" column="10" lean-forward="false" selection-start-line="365" selection-start-column="10" selection-end-line="365" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>absensi</find>
-      <find>abss</find>
-      <find>id_a</find>
-      <find>nippos</find>
-      <find>absen</find>
-      <find>divisi</find>
-      <find>jabatan</find>
-      <find>id_jab</find>
-      <find>tgl_input_jab</find>
       <find>jab</find>
       <find>j</find>
       <find>img-circle</find>
@@ -38,6 +56,21 @@
       <find>logo_image</find>
       <find>NIP</find>
       <find>nik KARY</find>
+      <find>tb_karyawan</find>
+      <find>id_kar</find>
+      <find>karyawan</find>
+      <find>kar</find>
+      <find>pegawai</find>
+      <find>tb_login</find>
+      <find>login</find>
+      <find>uid</find>
+      <find>jammasuk</find>
+      <find>nik</find>
+      <find>uid de</find>
+      <find>jam</find>
+      <find>date</find>
+      <find>dat</find>
+      <find>datetime</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -49,11 +82,19 @@
       <replace>Div</replace>
       <replace>indocement</replace>
       <replace>2018</replace>
+      <replace>tb_pegawai</replace>
+      <replace>pegawai</replace>
+      <replace>tb_user</replace>
+      <replace>jampresensi</replace>
+      <replace>nip</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\buyong</dir>
       <dir>C:\xampp\htdocs\presensi_kelompok05</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -64,17 +105,20 @@
         <option value="$PROJECT_DIR$/application/controllers/divisi.php" />
         <option value="$PROJECT_DIR$/application/controllers/backend.php" />
         <option value="$PROJECT_DIR$/application/controllers/home.php" />
-        <option value="$PROJECT_DIR$/application/controllers/karyawan.php" />
         <option value="$PROJECT_DIR$/application/controllers/merk.php" />
         <option value="$PROJECT_DIR$/application/controllers/presensi.php" />
         <option value="$PROJECT_DIR$/application/controllers/site.php" />
-        <option value="$PROJECT_DIR$/application/models/m_login.php" />
-        <option value="$PROJECT_DIR$/application/models/model.php" />
         <option value="$PROJECT_DIR$/application/views/divisi/data_divisi.php" />
         <option value="$PROJECT_DIR$/application/views/presensi/data_presensi.php" />
         <option value="$PROJECT_DIR$/application/views/inc/head2.php" />
         <option value="$PROJECT_DIR$/application/views/index.php" />
+        <option value="$PROJECT_DIR$/application/controllers/karyawan.php" />
+        <option value="$PROJECT_DIR$/application/views/pulang.php" />
+        <option value="$PROJECT_DIR$/application/controllers/pegawai.php" />
+        <option value="$PROJECT_DIR$/application/models/m_login.php" />
         <option value="$PROJECT_DIR$/application/models/pegawai_model.php" />
+        <option value="$PROJECT_DIR$/application/models/model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/login.php" />
       </list>
     </option>
   </component>
@@ -85,12 +129,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -118,103 +163,6 @@
               <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="helpers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="third_party" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="divisi" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="login" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="datatables" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="upload" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="system" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="system" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="system" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="fonts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="system" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="helpers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="presensi_kelompok05" type="b2602c69:ProjectViewProjectNode" />
-              <item name="presensi_kelompok05" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="system" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="language" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -239,6 +187,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="PHPUnit.presensi_kelompok05">
+    <configuration name="presensi_kelompok05" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.presensi_kelompok05" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -252,21 +210,23 @@
       <workItem from="1525370192786" duration="296000" />
       <workItem from="1525370517069" duration="6554000" />
       <workItem from="1525483062437" duration="2263000" />
-      <workItem from="1525561528276" duration="1107000" />
+      <workItem from="1525561528276" duration="4989000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10220000" />
+    <option name="totallyTimeSpent" value="14102000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -278,7 +238,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -293,13 +252,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/errors/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/helpers/currency_format_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -351,10 +303,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/karyawan/data_karyawan.php">
+    <entry file="file://$PROJECT_DIR$/application/views/pegawai/data_pegawai.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1641">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -362,6 +315,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="654">
           <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -369,6 +323,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -376,6 +331,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -383,14 +339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/pulang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-658">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -405,13 +353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-97">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -420,6 +361,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -431,28 +373,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/karyawan/edit_karyawan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding>
-            <marker date="1434205016484" expanded="true" signature="1842:1851" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -464,72 +389,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/m_login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
-          <folding>
-            <marker date="1525376180814" expanded="true" signature="409:511" ph="Select * fro... tb_login" />
-            <marker date="1525376180814" expanded="true" signature="796:847" ph="SELECT * FRO... tb_login" />
-            <marker date="1525376180814" expanded="true" signature="919:992" ph="SELECT * FRO... ci_sessions" />
-            <marker date="1525376180814" expanded="true" signature="2887:2896" ph="..." />
-            <marker date="1525376180814" expanded="true" signature="3077:3086" ph="..." />
-            <marker date="1525376180814" expanded="true" signature="3567:3669" ph="Select * fro... tb_login" />
-            <marker date="1525376180814" expanded="true" signature="4220:4271" ph="SELECT * FRO... tb_login" />
-            <marker date="1525376180814" expanded="true" signature="4343:4416" ph="SELECT * FRO... ci_sessions" />
-            <marker date="1525376180814" expanded="true" signature="5795:5804" ph="..." />
-            <marker date="1525376180814" expanded="true" signature="5985:5994" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/pegawai_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="96" column="53" lean-forward="false" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
-          <folding>
-            <marker date="1525377164921" expanded="true" signature="221:265" ph="select nik f... tb_karyawan" />
-            <marker date="1525377164921" expanded="true" signature="486:520" ph="..." />
-            <marker date="1525377164921" expanded="true" signature="603:700" ph="select nik,j... tb_presensi" />
-            <marker date="1525377164921" expanded="true" signature="843:877" ph="..." />
-            <marker date="1525377164921" expanded="true" signature="966:1010" ph="..." />
-            <marker date="1525377164921" expanded="true" signature="1366:1400" ph="..." />
-            <marker date="1525377164921" expanded="true" signature="1488:1534" ph="..." />
-            <marker date="1525377164921" expanded="true" signature="1664:1730" ph="select nik f... tb_karyawan" />
-            <marker date="1525377164921" expanded="true" signature="1952:1986" ph="..." />
-            <marker date="1525377164921" expanded="true" signature="2069:2166" ph="select nik,j... tb_presensi" />
-            <marker date="1525377164921" expanded="true" signature="2309:2343" ph="..." />
-            <marker date="1525377164921" expanded="true" signature="2432:2476" ph="..." />
-            <marker date="1525377164921" expanded="true" signature="2798:2832" ph="..." />
-            <marker date="1525377164921" expanded="true" signature="2920:2966" ph="..." />
-            <marker date="1525377164921" expanded="true" signature="3089:3206" ph="select *,tb_... tb_presensi" />
-            <marker date="1525377164921" expanded="true" signature="3400:3442" ph="select count... tb_presensi" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/karyawan/add_karyawan.php">
+    <entry file="file://$PROJECT_DIR$/application/views/pegawai/add_pegawai.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1071">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <marker date="1525376181120" expanded="true" signature="422:446" ph="select * fro... tb_divisi" />
-            <marker date="1525376181120" expanded="true" signature="575:601" ph="select * fro... tb_karyawan" />
-            <marker date="1525376181120" expanded="true" signature="697:738" ph="select * fro... tb_karyawan" />
-            <marker date="1525376181120" expanded="true" signature="836:960" ph="select tb_pr... tb_karyawan" />
-            <marker date="1525376181120" expanded="true" signature="1162:1456" ph="SELECT p.*, tb_karyawan" />
-            <marker date="1525376181120" expanded="true" signature="1595:1776" ph="SELECT p.*, tb_karyawan" />
-            <marker date="1525376181120" expanded="true" signature="2472:2546" ph="select sum(c... tb_karyawan" />
-            <marker date="1525376181120" expanded="true" signature="2648:2694" ph="select count... tb_divisi" />
-            <marker date="1525376181120" expanded="true" signature="2774:2837" ph="select count... tb_karyawan" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -549,18 +413,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/karyawan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1474">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -568,6 +425,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -575,6 +433,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -582,6 +441,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -589,6 +449,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -646,7 +507,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/core/CodeIgniter.php">
+    <entry file="file://$PROJECT_DIR$/system/helpers/array_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -654,10 +515,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/helpers/array_helper.php">
+    <entry file="file://$PROJECT_DIR$/application/views/pegawai/edit_pegawai.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="202">
+          <caret line="51" column="85" lean-forward="false" selection-start-line="51" selection-start-column="85" selection-end-line="51" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pulang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="60" column="112" lean-forward="false" selection-start-line="60" selection-start-column="112" selection-end-line="60" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/pegawai.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/core/CodeIgniter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="330" column="41" lean-forward="false" selection-start-line="330" selection-start-column="41" selection-end-line="330" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/pegawai_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="38" column="135" lean-forward="false" selection-start-line="38" selection-start-column="135" selection-end-line="38" selection-end-column="135" />
+          <folding>
+            <marker date="1525568314113" expanded="true" signature="421:445" ph="select * fro... tb_divisi" />
+            <marker date="1525568314113" expanded="true" signature="573:598" ph="select * fro... tb_pegawai" />
+            <marker date="1525568314113" expanded="true" signature="693:733" ph="select * fro... tb_pegawai" />
+            <marker date="1525568314113" expanded="true" signature="831:952" ph="select tb_pr... tb_pegawai" />
+            <marker date="1525568314113" expanded="true" signature="1152:1445" ph="SELECT p.*, tb_pegawai" />
+            <marker date="1525568314113" expanded="true" signature="1583:1763" ph="SELECT p.*, tb_pegawai" />
+            <marker date="1525568314113" expanded="true" signature="2451:2524" ph="select sum(c... tb_pegawai" />
+            <marker date="1525568314113" expanded="true" signature="2626:2672" ph="select count... tb_divisi" />
+            <marker date="1525568314113" expanded="true" signature="2752:2814" ph="select count... tb_pegawai" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <folding>
+            <marker date="1525568420360" expanded="true" signature="1854:1863" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/core/Input.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="365" column="10" lean-forward="false" selection-start-line="365" selection-start-column="10" selection-end-line="365" selection-end-column="10" />
           <folding />
         </state>
       </provider>

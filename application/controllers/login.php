@@ -47,7 +47,7 @@ class Login extends CI_Controller {
 			}
 			else{
 				$this->session->set_userdata('pasartungging', $sess_data);
-				redirect(base_url());
+				redirect(base_url()."dashboard");
 			}		
 		}
 		else {

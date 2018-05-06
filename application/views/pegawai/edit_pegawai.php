@@ -22,7 +22,7 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          <b>EDIT DATA KARYAWAN</b>
+          <b>EDIT DATA PEGAWAI</b>
         </h1>
           <!-- <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -40,23 +40,23 @@
             <div class="box">
               <div class="box-header">
                 <i class="fa fa-plus"></i>
-                <h3 class="box-title">FORM EDIT KARYAWAN</h3>
+                <h3 class="box-title">FORM EDIT PEGAWAI</h3>
               </div>
               <div class="box-body chat" id="chat-box">
                 <!-- chat item -->
                 <div class="item">
-                  <form role="form" action="<?php echo base_url(); ?>karyawan/updatekaryawan" method="POST" enctype="multipart/form-data">
+                  <form role="form" action="<?php echo base_url(); ?>pegawai/updatepegawai" method="POST" enctype="multipart/form-data">
                   <div class="col-lg-6">
                     <div class="form-group">
-                      <label for="">NIK</label>
-                        <input type="hidden" class="form-control" value="<?php echo $id_kar; ?>" id="" name="id_kar" placeholder="Isika" required>
-                        <input type="hidden" class="form-control" value="<?php echo $tgl_input_kar; ?>" id="" name="tgl_input_kar" placeholder="Isikan" required>
-                        <input type="text" class="form-control" value="<?php echo $nik; ?>" id="" name="nik" placeholder="" required>
+                      <label for="">NIP</label>
+
+                        <input type="hidden" class="form-control" value="<?php echo $tgl_input_pg; ?>" id="" name="tgl_input_pg" placeholder="Isikan" required>
+                        <input type="text" class="form-control" value="<?php echo $nip; ?>" id="" name="nip" placeholder="" required>
                     </div>
 
                     <div class="form-group">
                       <label for="">Nama</label>
-                        <input type="text" class="form-control" value="<?php echo $nama_kar; ?>" id="" name="nama_kar" placeholder="" required>                        
+                        <input type="text" class="form-control" value="<?php echo $nama_pg; ?>" id="" name="nama_pg" placeholder="" required>
                     </div>
                     <div class="form-group">
                       <label for="">No HP</label>

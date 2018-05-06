@@ -17,7 +17,7 @@ class Presensi extends CI_Controller {
 	public function index()
 	{
 		$data = array(
-			'data_presensi' => $this->model->GetKaryawanDivAbs("order by uid desc")->result_array(),
+			'data_presensi' => $this->model->GetPegawaiDivAbs("order by id_presensi desc")->result_array(),
 			'nama' => $this->session->userdata('nama'),	
 		);
 		
