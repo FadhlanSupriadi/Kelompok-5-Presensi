@@ -8,12 +8,13 @@ class Pegawai_model extends CI_Model{
 		parent::__construct();
 	}
 	 
-	/* GET DAT APEGAWAI */
+	/* GET DATA PEGAWAI */
 		function cekNipPegawai(){
 			$nip=$this->input->post('nip');
 			$query=$this->db->query("select nip from tb_pegawai where nip='$nip'");
 			return $query->num_rows();
 		}
+
 		function cekMasuk(){
 			$nip=$this->input->post('nip');
 			$datenow=date("Y-m-d");
@@ -45,11 +46,13 @@ class Pegawai_model extends CI_Model{
 				echo'<label style="color:green;font-size:50px;font-family:calibri"><br>'.date("H:i:s").'</label>';
 			}
 		}
+
 		function cekdatang(){
 			$nip=$this->input->post('nip');
 			$query=$this->db->query("select nip from tb_pegawai where nip='$nip' and  kodepresensi='1'");
 			return $query->num_rows();
 		}
+
 		function cekPulang(){
 			$nip=$this->input->post('nip');
 			$datenow=date("Y-m-d");
@@ -89,15 +92,6 @@ class Pegawai_model extends CI_Model{
 			 if ($query->num_rows() > 0) {
 				foreach ($query->result() as $data) {
 					$menus[]=$data;
-				}
-				return $menus;
-			}
-		}
-		function count(){
-			$query=$this->db->query("select count(1) as jumlah from tb_presensi");
-			 if ($query->num_rows() > 0) {
-				foreach ($query->result() as $data) {
-					$menus=$data->jumlah;
 				}
 				return $menus;
 			}
