@@ -9,6 +9,7 @@ class Pegawai extends CI_Controller {
 		$this->_cek_login();
 		$this->load->helper('currency_format_helper');
 	}
+
 	private function _cek_login()
 	{
 		if(!$this->session->userdata('useradmin')){            
@@ -19,24 +20,24 @@ class Pegawai extends CI_Controller {
 	public function index()
 	{
 		$data = array(
-			'nama' => $this->session->userdata('nama'),	
-			'data_pegawai' => $this->model->GetPegawaiDiv("order by nip desc")->result_array(),
+			'nama' => $this->session->userdata('nama'),
+			'data_pegawai' => $this->adminhr_model->GetPegawaiDiv("order by nip desc")->result_array(),
 		);
 
 		$this->load->view('pegawai/data_pegawai', $data);
 	}
 
-	function addpegawai()
+	public function addpegawai()
 	{
 		$data = array(
 			'nama' => $this->session->userdata('nama'),	
-			'optdivisi' => $this->model->GetDiv()->result_array(),
+			'optdivisi' => $this->adminhr_model->GetDiv()->result_array(),
 		);
 		
 		$this->load->view('pegawai/add_pegawai', $data);
 	}
 
-	function savedata(){
+	public function savedata(){
 		$config = array(
 			'upload_path' => './assets/upload',
 			'allowed_types' => 'gif|jpg|JPG|png',
@@ -65,7 +66,7 @@ class Pegawai extends CI_Controller {
 			'foto' => $file_name,
 			);
 		
-		$result = $this->model->Simpan('tb_pegawai', $data);
+		$result = $this->adminhr_model->Simpan('tb_pegawai', $data);
 		if($result == 1){
 			$this->session->set_flashdata("sukses", "<div class='alert alert-success'><strong>Simpan data BERHASIL dilakukan</strong></div>");
 			header('location:'.base_url().'pegawai');
@@ -75,12 +76,12 @@ class Pegawai extends CI_Controller {
 		}		
 	}
 
-	function editpegawai($kode = 0){
-		$data_pegawai = $this->model->GetPegawai("where nip = '$kode'")->result_array();
+	public function editpegawai($kode = 0){
+		$data_pegawai = $this->adminhr_model->GetPegawai("where nip = '$kode'")->result_array();
 
 		/*menjadikan kategori ke array*/
 		$kategori_post_array = array();
-		foreach($this->model->GetPegawai("where nip = '$kode'")->result_array() as $kat){
+		foreach($this->adminhr_model->GetPegawai("where nip = '$kode'")->result_array() as $kat){
 			$kategori_post_array[] = $kat['id_div'];
 		}
 
@@ -92,15 +93,16 @@ class Pegawai extends CI_Controller {
 			'nohp' => $data_pegawai[0]['nohp'],
 			'foto' => $data_pegawai[0]['foto'],
 			'tgl_input_pg' => $data_pegawai[0]['tgl_input_pg'],
-			'divisi' => $this->model->GetDiv()->result_array(),
+			'divisi' => $this->adminhr_model->GetDiv()->result_array(),
 			'label_post' => $kategori_post_array,
 			);
 		$this->load->view('pegawai/edit_pegawai', $data);
 	}
 
-	function hapuspg($kode = 1){
+	// hapus pegawai
+	public function hapuspg($kode = 1){
 		
-		$result = $this->model->Hapus('tb_pegawai', array('nip' => $kode));
+		$result = $this->adminhr_model->Hapus('tb_pegawai', array('nip' => $kode));
 		if($result == 1){
 			$this->session->set_flashdata("sukses", "<div class='alert alert-success'><strong>Hapus data BERHASIL dilakukan</strong></div>");
 			header('location:'.base_url().'pegawai');
@@ -110,7 +112,7 @@ class Pegawai extends CI_Controller {
 		}
 	}
 
-	function updatepegawai(){
+	public function updatepegawai(){
 		if($_FILES['file_upload']['error'] == 0):
 			$config = array(
 				'upload_path' => './assets/upload',
@@ -136,7 +138,7 @@ class Pegawai extends CI_Controller {
 			'foto' => $file_name,
 			);
 		
-		$res = $this->model->UpdatePegawai($data);
+		$res = $this->adminhr_model->UpdatePegawai($data);
 		if($res>=0){
 			$this->session->set_flashdata("sukses", "<div class='alert alert-success'><strong>Update data BERHASIL di lakukan</strong></div>");
 			header('location:'.base_url().'pegawai');
@@ -145,6 +147,5 @@ class Pegawai extends CI_Controller {
 			header('location:'.base_url().'pegawai');
 		}
 	}
-
 }
 

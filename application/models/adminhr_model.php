@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Model extends CI_Model {
+class adminhr_model extends CI_Model {
 
 	public $variable;
 
@@ -10,7 +10,7 @@ class Model extends CI_Model {
 		
 	}
 
-	//ambil data user
+	//ambil data tabel user
 	function GetUser($data) {
         $query = $this->db->get_where('tb_user', $data);
         return $query;
@@ -22,28 +22,15 @@ class Model extends CI_Model {
 		$data = $this->db->query('select * from tb_divisi '.$where);
 		return $data;
 	}
-	//ambil data tabel produk
+
+	//ambil data tabel pegawai
 	public function GetPegawai($where= "")
 	{
 		$data = $this->db->query('select * from tb_pegawai '.$where);
 		return $data;
 	}
 
-	public function GetTotPegawai()
-	{
-		$data = $this->db->query('select * from tb_pegawai group by id_div ');
-		return $data;
-	}
-
-	public function GetDetPresensi($where = ""){
-		return $this->db->query("select tb_presensi.*, tb_pegawai.*, tb_divisi.* from tb_pegawai inner join tb_presensi on tb_presensi.nip=tb_pegawai.nip $where;");
-	}
-
-	public function count_all() {
-		return $this->db->count_all('tb_pegawai');
-	}
-
-	//ambil data dari 3 tabel
+	//ambil data dari 3 tabel (Controller Presensi.php)
 	public function GetPegawaiDivAbs($where= "") {
     $data = $this->db->query('SELECT p.*, q.divisi, r.*
                                 FROM tb_pegawai p
@@ -54,7 +41,7 @@ class Model extends CI_Model {
     return $data;
     }
 
-	//ambil data dari 2 tabel
+	//ambil data dari 2 tabel (Controller Pegawai.php)
 	public function GetPegawaiDiv($where= "") {
     $data = $this->db->query('SELECT p.*, q.divisi
                                 FROM tb_pegawai p
@@ -76,7 +63,8 @@ class Model extends CI_Model {
 		return $this->db->delete($table,$where);
 	}
 
-	function UpdatePegawai($data){
+	// khusus tabel pegawai
+	public function UpdatePegawai($data){
         $this->db->where('nip',$data['nip']);
         $this->db->update('tb_pegawai',$data);
     }

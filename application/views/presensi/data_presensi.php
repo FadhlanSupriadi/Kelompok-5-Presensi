@@ -81,6 +81,7 @@
                       <th>TANGGAL</th>
                       <th>JAM</th>
                       <th>STATUS</th>
+                        <th>AKSI</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -98,7 +99,9 @@
                       <h4><span style="text-fonts:16px" class="label label-danger">Pulang</span></h4>
                       <?php } ?>
                       </td>
-                      
+                        <td>
+                            <a onclick="return confirm('Hapus data ?');" class="btn btn-danger btn-sm" href="<?php echo base_url(); ?>presensi/hapuspr/<?php echo $row['id_presensi']; ?>"><i class="fa fa-trash"></i></a>
+                        </td>
                     </tr>
                     <?php } ?>
                   </tbody>

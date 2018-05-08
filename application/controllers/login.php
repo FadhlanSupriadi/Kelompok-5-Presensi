@@ -3,7 +3,7 @@ date_default_timezone_set('Asia/Jakarta');
 
 class Login extends CI_Controller {
 
-	function index(){
+	public function index(){
 		if ($this->session->userdata('dashboard') OR $this->session->userdata('kategori')) {
 			redirect(base_url().'backend');
 		}
@@ -31,15 +31,15 @@ class Login extends CI_Controller {
 			'pass_user' => $this->input->post('pass_user', TRUE),
 			);
 		
-		$hasil = $this->model->GetUser($data);
+		$hasil = $this->adminhr_model->GetUser($data);
 		if ($hasil->num_rows() == 1) {
 			foreach ($hasil->result() as $sess) {
-				// $sess_data['logged_in'] = 'Sudah Loggin';
+				// $sess_data['logged_in'] = 'Sudah Login';
 				$sess_data['id_user'] = $sess->id_user;
 				$sess_data['nama_user'] = $sess->nama_user;
                 $sess_data['pass_user'] = $sess->pass_user;
 				$sess_data['nama'] = $sess->nama;
-                $sess_data['nama'] = $sess->nama;
+                $sess_data['nip'] = $sess->nip;
 				$this->session->set_userdata($sess_data);
 				$this->session->set_userdata('useradmin', $sess_data);
 				redirect(base_url()."dashboard");
@@ -54,11 +54,8 @@ class Login extends CI_Controller {
 		}
 	}
 
-	function logout(){
+	public function logout(){
 		$this->session->sess_destroy();
 		redirect(base_url().'login');
 	}
-    // function register(){
-    // 	$this->load->view('v_register');
-    // }
 }

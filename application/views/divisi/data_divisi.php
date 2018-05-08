@@ -142,7 +142,7 @@
 
         });
       });
-            //waktu flash data :v
+
       $(function(){
       $('#pesan-flash').delay(4000).fadeOut();
       $('#pesan-error-flash').delay(5000).fadeOut();

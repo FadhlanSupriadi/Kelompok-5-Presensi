@@ -16,17 +16,11 @@ class Backend extends CI_Controller {
 			//login sebagai admin
 			redirect(base_url().'dashboard');
 		}
-		// elseif ($this->session->userdata('useradmin')) {
-		// 	//login sebagai admin
-		// 	redirect(base_url().'kategori');
-		// }
-
 		else{
 			//kembali ke halaman login
 			redirect(base_url().'login');
 		}
-		
-	}
 
+	}
 }
 

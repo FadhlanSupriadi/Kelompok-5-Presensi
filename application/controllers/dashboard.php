@@ -8,6 +8,7 @@ class Dashboard extends CI_Controller {
 		parent::__construct();
 		$this->_cek_login();
 	}
+
 	private function _cek_login()
 	{
 		if(!$this->session->userdata('useradmin')){            
@@ -20,7 +21,6 @@ class Dashboard extends CI_Controller {
 		$data = array(
 			'nama' => $this->session->userdata('nama'),
 		);
-
 		$this->load->view('dashboard', $data);
 	}
 }

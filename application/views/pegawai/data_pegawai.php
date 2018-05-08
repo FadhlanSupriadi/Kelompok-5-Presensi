@@ -54,7 +54,6 @@
                       <th>NO HP</th>
                       <th>TGL INPUT</th>
                       <th>FOTO</th>
-
                       <th>AKSI</th>
                     </tr>
                   </thead>
@@ -74,7 +73,7 @@
                     
                       <td>
                       <a class="btn btn-warning btn-sm" href="<?php echo base_url(); ?>pegawai/editpegawai/<?php echo $row['nip']; ?>"><i class="fa fa-pencil"></i></a>
-                      <a onclick="return confirm('Hapus data??');" class="btn btn-danger btn-sm" href="<?php echo base_url(); ?>pegawai/hapuspg/<?php echo $row['nip']; ?>"><i class="fa fa-trash"></i></a>
+                      <a onclick="return confirm('Hapus data ?');" class="btn btn-danger btn-sm" href="<?php echo base_url(); ?>pegawai/hapuspg/<?php echo $row['nip']; ?>"><i class="fa fa-trash"></i></a>
                       </td>
                     </tr>
                     <?php } ?>
@@ -115,7 +114,7 @@
 
         });
       });
-            //waktu flash data :v
+
       $(function(){
       $('#pesan-flash').delay(4000).fadeOut();
       $('#pesan-error-flash').delay(5000).fadeOut();
